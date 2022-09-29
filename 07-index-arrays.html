@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <title>Map arrays (#7)</title>
+  <meta name="description" content="Map arrays (#7)">
+</head>
+
+<body>
+  <script>
+    
+    const fruits = ["Apple", "Orange", "Apple", "Mango"]
+    const numbers = [4,9,16,25,29]
+    
+    /// Helper function
+    const findOver18 = (item) => {
+        return item > 18
+    }
+    
+    /// indexOf
+    const a = fruits.indexOf("Apple")         //finds the first one in an array
+    const b = fruits.lastIndexOf("Apple")     //finds the index of the last one in an array
+    
+    // find
+    const c = numbers.find(findOver18)        //finds the first one in an array
+    const d = numbers.findIndex(findOver18)   //finds the index of the first one in an array
+    
+    console.log({ a: a, b: b, c: c, d: d })
+
+  </script>
+
+</body>
+</html>

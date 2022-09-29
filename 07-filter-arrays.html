@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <title>Map arrays (#7)</title>
+  <meta name="description" content="Map arrays (#7)">
+</head>
+
+<body>
+  <script>
+    
+    const numbers = [45, 4, 9, 16, 25]
+    
+    ///option 1
+    const myFunction = (value, index, array) => { 
+        return value > 18
+    }
+    const over18_1 = numbers.filter(myFunction)
+
+    ///option 2  (best)
+    const over18_2 = numbers.filter( value => value > 18 )
+    
+    ///option 3
+    const over18_3 = [];
+    numbers.forEach((value) => {
+      if (value > 18){ over18_3.push(value) }})
+
+
+    ///logging
+    console.log(over18_1)
+    console.log(over18_2)
+    console.log(over18_3)
+
+  </script>
+
+</body>
+</html>

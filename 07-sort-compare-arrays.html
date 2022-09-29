@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <title>Sort arrays (#7)</title>
+  <meta name="description" content="Sort arrays (#7)">
+</head>
+
+<body>
+  <script>
+    const  beatles = ["Ringo", "Paul", "George", "John"]
+    beatles.sort()
+    console.log(beatles)
+   
+    /// But...
+    
+    const points = [40, 100, 1, 5, 25, 10]
+    points.sort()
+    console.log(points)
+    /// ????
+
+    points.sort((a,b)=>a-b)
+    console.log(points)
+    ///better!
+
+  </script>
+
+</body>
+
+</html>
