@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <title>Switch Control Structure (#5)</title>
+  <meta name="description" content="Switch Control Structure (#5)">
+</head>
+
+<body>
+  <script>
+    const hour = 99
+    let msg = ""
+
+    switch(hour) {
+      case 10: {
+        msg = "It's 10 o'clock"
+        break
+      }
+    case 11: {
+        msg = "It's 11 o'clock"
+        break
+      }
+    case 12: {
+        msg = "It's noon!"
+        break
+      }
+    default: {
+        msg = "My clock is off"
+        break
+      }
+    }
+    console.log(`Message: ${msg}`)  
+  </script>
+</body>
+
+</html>

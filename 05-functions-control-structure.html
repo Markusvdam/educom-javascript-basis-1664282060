@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <title>Functions Control Structure (#5)</title>
+  <meta name="description" content="Functions Control Structure (#5)">
+</head>
+
+<body>
+  <script>
+    const doSomething = (x, y) => {
+      const didSomething = {
+        msg: `We did something with X: ${x} and Y: ${y}`,
+        x: x * 4,
+        y: y * 2
+      }     
+      return(didSomething)
+    }
+    
+    let count = 5
+    let apples = 2
+    
+    let result = doSomething(count,apples)
+    console.log(result)   
+  </script>
+</body>
+
+</html>
