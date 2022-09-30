@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <title>Objects from classes (#10)</title>
+  <meta name="description" content="Objects from classes (#10)">
+</head>
+
+<body>
+  <script>
+  class car {
+    /// Properties
+    color = ""
+    doors = 0;
+    
+    /// Constructor
+    constructor(color, doors) {
+      this.color = color
+      this.doors = doors
+    }
+    
+    /// Methods
+    getColor() {
+      return(this.color)
+    }
+    /// Methods
+    getDoors() {
+      return(this.doors)
+    }
+
+  }
+
+  const fiat = new car("red", 2)
+  const porsche = new car("black", 4)
+  
+  console.log({
+    fiat: fiat.getColor() + ' | ' + fiat.getDoors(), 
+    porsche: porsche.getColor() + ' | ' + porsche.getDoors()
+  }) 
+
+</script>
+
+</body>
+</html>
