@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <title>Exercise 1 arrays (#7)</title>
+  <meta name="description" content="Exercise 1 arrays (#7)">
+</head>
+
+<body>
+  <script>
+    
+    const basket = [
+      {"Name" : "TV", "Price" : 950, "Amount" : 1},
+      {"Name" : "Phone", "Price" : 750, "Amount" : 1},
+      {"Name" : "Bluetooh speaker", "Price" : 300, "Amount" : 3}
+    ]
+
+    let total = 0;
+
+    basket.forEach((value) => {
+      total = total + (value.Price * value.Amount)
+    })
+
+    let totalTax = total * 1.21
+
+    console.log('Total: € ' + total + ' | Total(incl tax): € ' + totalTax)
+
+  </script>
+
+</body>
+</html>
