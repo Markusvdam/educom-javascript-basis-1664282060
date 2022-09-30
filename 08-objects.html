@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <title>Variable Methods (#8)</title>
+  <meta name="description" content="Variable Methods (#8)">
+</head>
+
+<body>
+  <script>
+    
+    let car = {
+     brand: "Fiat",
+     type: "500",
+     color: "Red",
+     weight: 850
+    }
+
+    car.numberOfDoors = 2
+    
+    car.getColor = function() {
+         return(this.color)
+    }
+    
+    console.log("Color: " + car.getColor() + " | Nr. of doors: " + car.numberOfDoors)
+
+  </script>
+
+</body>
+</html>
